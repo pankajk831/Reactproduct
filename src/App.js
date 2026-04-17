@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { useState } from "react"; 
-   
+
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Recipe from "./Components/Recipe";
@@ -19,6 +19,7 @@ import Mobilesdetail from "./Components/Mobilesdetail";
 
 import Groceries from "./Components/Groceries";
 import Groceriesdetail from "./Components/Groceriesdetail";
+import Panjaj from "./Components/panjaj"
 import Hello from "./Components/Hello";
 
 
@@ -84,6 +85,7 @@ function App() {
 
      <Route path="/Kitchenaccessories" element={<Kitchenaccessories />} />
    <Route path="/Kitchenaccessoriesdetail/:id" element={<Kitchenaccessoriesdetail />} />
+         <Route path="/panjaj" element={<><Panjaj /><Footer /></>} />
           <Route path="/hello" element={<><Hello /><Footer /></>} />
 
 
