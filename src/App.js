@@ -19,6 +19,7 @@ import Mobilesdetail from "./Components/Mobilesdetail";
 
 import Groceries from "./Components/Groceries";
 import Groceriesdetail from "./Components/Groceriesdetail";
+import Hello from "./Components/Hello";
 
 
 
@@ -83,6 +84,9 @@ function App() {
 
      <Route path="/Kitchenaccessories" element={<Kitchenaccessories />} />
    <Route path="/Kitchenaccessoriesdetail/:id" element={<Kitchenaccessoriesdetail />} />
+          <Route path="/hello" element={<><Hello /><Footer /></>} />
+
+
 
         {/* 🔒 Protected Routes */}
         <Route path="/carts" element={<ProtectedRoute user={user}><Carts />
